@@ -1,0 +1,84 @@
+*:root{
+    --almost-purple: rgb(80, 23, 134);
+    --almost-white: rgb(248, 240, 240);
+    --almost-red: rgb(195, 12, 12);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: black; */
+    background-image: url('../img/irithyll-of-the-boreal-valley.jpg');
+    background-size: cover;
+    color: var(--almost-white);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container{
+    margin-top: 50px;
+    margin-inline: auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+img{
+    width: 70%;
+    border-radius: 25px;
+    box-shadow: 0px -13px 80px var(--almost-red);
+}
+
+h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+p{
+    margin-bottom: 40px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+input, button{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+input{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-color: var(--almost-purple);
+    color: var(--almost-white);
+    /* transition: ease-out filter 3s; */
+}
+
+button:hover{
+    background-image: url('../img/red-thread-fate.png');
+    content: none;
+    /* filter: brightness(1.2); */
+    cursor: pointer;
+    color: transparent;
+}
+
+.answer{
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+.answer div{
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
