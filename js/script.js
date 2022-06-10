@@ -27,7 +27,7 @@ const answers = [
 //clicar em fazer pergunta
 function askQuestion(){
 
-    if(askInput.value == null){
+    if(askInput.value == ""){
         alert("Digite sua pergunta")
         return
     }
