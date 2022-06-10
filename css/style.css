@@ -71,12 +71,12 @@ button:hover{
     color: transparent;
 }
 
-.answer{
+.answerElement{
     margin-top: 30px;
     transition: opacity 1s;
 }
 
-.answer div{
+.answerElement div{
     font-size: 16px;
     font-weight: normal;
     opacity: 0.9;
