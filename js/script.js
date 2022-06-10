@@ -39,7 +39,7 @@ function askQuestion(){
     const fullAnswers = answers.length;
     const randomNumber = Math.floor(Math.random() * fullAnswers);
     
-    answerElement.innerHTML = ask + answers[randomNumber]
+    answerElement.innerHTML = answers[randomNumber]
     answerElement.style.opacity = 1;
     //sumir a resposta depois de 3 segundos
     setTimeout(function(){
