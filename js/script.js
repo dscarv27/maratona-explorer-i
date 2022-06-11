@@ -35,9 +35,9 @@ function askQuestion(){
     
     answerElement.innerHTML = answers[randomNumber]
     answerElement.style.opacity = 1;
-    //sumir a resposta depois de 4 segundos
+    //sumir a resposta depois de 3 segundos
     setTimeout(function(){
         answerElement.style.opacity = 0
         askButton.removeAttribute("disabled")
-    }, 4000)
+    }, 3000)
 }
