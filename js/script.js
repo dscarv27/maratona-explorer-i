@@ -4,22 +4,16 @@ const askButton = document.querySelector('#askButton')
 const answers = [
     "Certeza!",
     "Não tenho tanta certeza.",
-    "É decididamente assim.",
     "Não conte com isso.",
-    "Sem dúvidas!",
     "Pergunte novamente mais tarde.",
     "Sim, definitivamente!",
-    "Minha resposta é não.",
-    "Você pode contar com isso.",
     "Melhor não te dizer agora.",
     "A meu ver, sim.",
     "Minhas fontes dizem não.",
     "Provavelmente.",
-    "Não é possível prever agora.",
     "Perspectiva boa.",
     "As perspectivas não são tão boas.",
-    "Sim.",
-    "Concentre-se e pergunte novamente.",
+    "O fio do destino está sempre... Na palma da sua mão!",
     "Sinais apontam que sim.",
     "Quando você não pode vencer o destino por conta própria, é quando você confia em seus amigos e equipe!",
 ]
@@ -41,9 +35,9 @@ function askQuestion(){
     
     answerElement.innerHTML = answers[randomNumber]
     answerElement.style.opacity = 1;
-    //sumir a resposta depois de 3 segundos
+    //sumir a resposta depois de 4 segundos
     setTimeout(function(){
         answerElement.style.opacity = 0
         askButton.removeAttribute("disabled")
-    }, 3000)
+    }, 4000)
 }
