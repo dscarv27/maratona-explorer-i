@@ -9,13 +9,17 @@
 </head>
 <body>
     <div class="container">
-        <img src="./img/vanessa-black-clover.jpg" alt="vanessa-black-clover"/>
+        <img src="./img/vanessa-black-clover.jpg" class="vanessa" alt="vanessa-black-clover"/>
         <h1>Vou revelar o seu destino!</h1>
         <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
         <input id="askInput" type="text" placeholder="Digite sua pergunta"/>
+        <div class="buttonLoading">
+            <img src="./img/cristal-ball.svg" id="loading"/>
+        </div>
         <button id="askButton" onclick="askQuestion()">Fazer Pergunta</button>
         <h3 id="answerElement"></h3>
     </div>
+    
     <script type="text/javascript" src="./js/script.js" defer></script>
 </body>
 </html>

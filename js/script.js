@@ -1,6 +1,7 @@
 const answerElement = document.querySelector('#answerElement')
 const askInput = document.querySelector('#askInput')
 const askButton = document.querySelector('#askButton')
+const loading = document.querySelector('#loading')
 const answers = [
     "Certeza!",
     "Não tenho tanta certeza.",
@@ -33,11 +34,18 @@ function askQuestion(){
     const fullAnswers = answers.length;
     const randomNumber = Math.floor(Math.random() * fullAnswers);
     
-    answerElement.innerHTML = answers[randomNumber]
-    answerElement.style.opacity = 1;
-    //sumir a resposta depois de 3 segundos
+    loading.style.display = "block"
+
+    setTimeout(function(){
+        answerElement.innerHTML = answers[randomNumber]
+        answerElement.style.opacity = 1;
+        loading.style.display = "none";
+    }, 3000)
+
+
+    //sumir a resposta depois de 6 segundos
     setTimeout(function(){
         answerElement.style.opacity = 0
         askButton.removeAttribute("disabled")
-    }, 3000)
+    }, 6000)
 }
