@@ -65,7 +65,6 @@ button{
 
 button:hover{
     background-image: url('../img/red-thread-fate.png');
-    content: none;
     filter: brightness(1.2);
     cursor: pointer;
     color: transparent;
@@ -81,6 +80,7 @@ button:hover{
 }
 
 .buttonLoading{
+    content: none;
     display: flex;
     justify-content: center;    
 }
