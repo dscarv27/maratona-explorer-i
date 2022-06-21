@@ -86,6 +86,7 @@ button:hover{
 }
 
 #loading{
+    display: none;
     position: relative;
     width: 40px;
     height: 60px;
