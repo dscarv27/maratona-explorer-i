@@ -28,8 +28,6 @@ function askQuestion(){
     }
     askButton.setAttribute("disabled", true)
 
-    const ask = "<div>" + askInput.value + "</div>"
-
     //gerar numero aleatorio
     const fullAnswers = answers.length;
     const randomNumber = Math.floor(Math.random() * fullAnswers);
