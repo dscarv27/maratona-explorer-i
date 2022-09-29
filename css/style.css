@@ -60,14 +60,14 @@ button{
     border: none;
     background-color: var(--almost-purple);
     color: var(--almost-white);
-    /* transition: ease-out filter 3s; */
+    transition: ease-out filter 3s;
 }
 
 button:hover{
-    background-image: url('../img/red-thread-fate.png');
-    filter: brightness(1.2);
+    /* background-image: url('../img/red-thread-fate.png'); */
+    filter: brightness(1.4);
     cursor: pointer;
-    color: transparent;
+    /* color: transparent; */
 }
 
 #answerElement{
